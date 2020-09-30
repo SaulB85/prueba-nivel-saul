@@ -1,0 +1,80 @@
+<header>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 header-top p-0">
+            <ul class="header-top-menu">
+                <li><a href="#">Login&nbsp; o &nbsp;Alta</a></li>
+                <li><a href="#">Wish list</a></li>
+                <li><a href="#">Comparar</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row ptb-30-20 flex-nowrap">
+        <div class="logo">
+            <div class="col-12 p-0">
+                <h1>MEDITERRANEAMENTE</h1>
+            </div>
+        </div>
+
+        <div class="buscar-container">
+            <div class="col-12">
+                <form>
+                    <div class="row flex-nowrap">
+                        <div class="col-12 p-0 colum-buscar-producto">
+                            <input type="text" class="form-control buscar-producto" placeholder="Busca Tu Producto ...">
+                        </div>
+                        <div class="col-12 p-0 colum-categorias">
+                            <select class="form-control categorias" id="categorias">
+                <option value="todas" selected>Todas Categorias</option>
+                <option value="mujer">Mujer</option>
+                <option value="hombre">Hombre</option>
+                <option value="accesorios">Accesorios</option>
+                <option value="belleza">Belleza</option>
+                <option value="ninios">Niños</option>
+                <option value="calzado">Calzado</option>
+              </select>
+                            <input class="buscar" type="submit" name="buscar" value="Buscar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="carrito-container">
+            <div class="col-12">
+                <div class="carrito"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">
+            <nav class="navbar navbar-expand-lg p-0">
+                <a (click)="active = !active" class="navbar-brand text-white" href="#">CATEGORIAS</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link p-0" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="#">SUPER OFERTAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="#">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="#">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<app-promo [active]="active"></app-promo>
